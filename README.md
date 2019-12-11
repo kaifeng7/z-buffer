@@ -17,6 +17,6 @@ scanline
 
 ### buffer
 
-使用一个全局二位数组buffer，未使用深度缓存，而是在进入一个新的多边形时，将其z值与max_z做比较，如果大于max_z时，则覆盖。然后将max_z所代表的多边形id号存入buffer，在render时使用。
+- 使用一个全局二位数组buffer，未使用深度缓存，而是在进入一个新的多边形时，将其z值与max_z做比较，如果大于max_z时，则覆盖。然后将max_z所代表的多边形id号存入buffer，在render时使用。
 
 
